@@ -33,7 +33,7 @@ namespace QCMCreateur.Controllers
 
                 foreach(Utilisateur util in utilisateurliste)
                 {
-                    if(util.UserName == u.UserName)
+                    if(util.UserName.ToLower() == u.UserName.ToLower())
                     {
                         Utilisateur.Nom = util.LastName;
                         Utilisateur.log = util.UserName;

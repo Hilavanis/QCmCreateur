@@ -141,6 +141,7 @@
     <Compile Include="Models\Administrateur.cs" />
     <Compile Include="Models\Enseignant.cs" />
     <Compile Include="Models\Etudiant.cs" />
+    <Compile Include="Models\QCM.cs" />
     <Compile Include="Models\QcmCreateurContext.cs" />
     <Compile Include="Models\Utilisateur.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
