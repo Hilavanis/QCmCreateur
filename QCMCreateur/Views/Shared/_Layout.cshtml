@@ -30,10 +30,14 @@
                     {
                         if (QCMCreateur.Models.Administrateur.AdminOk == true)
                         {
+                            <li>@Html.ActionLink("Matiere", "AfficherListeMatiere", "Matiere")</li>
+                            <li>@Html.ActionLink("Creer QCM", "CreerQCM", "QCM")</li>
                             <li>@Html.ActionLink("Administrateur", "AfficherListeAdmin", "Administrateur")</li>
                         }
                         else if (QCMCreateur.Models.Enseignant.EnseigOk == true)
-                        { }
+                        {
+                            <li>@Html.ActionLink("Creer QCM", "CreerQCM", "QCM")</li>
+                        }
                         <li>@Html.ActionLink("Enseignant", "AfficherListeEnseignant", "Enseignant")</li>
                         <li>@Html.ActionLink("Etudiant", "AfficherListeEtudiant", "Etudiant")</li>
                         <li>@Html.ActionLink("Mon Compte", "MonCompte", "Utilisateur")</li>

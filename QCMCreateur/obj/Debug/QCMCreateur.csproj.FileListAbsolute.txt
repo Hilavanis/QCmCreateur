@@ -81,8 +81,8 @@ C:\Users\Vin\source\repos\QCMCreateur\QCMCreateur\bin\fr\System.Web.Razor.resour
 C:\Users\Vin\source\repos\QCMCreateur\QCMCreateur\bin\fr\System.Web.WebPages.resources.dll
 C:\Users\Vin\source\repos\QCMCreateur\QCMCreateur\bin\fr\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Vin\source\repos\QCMCreateur\QCMCreateur\bin\fr\System.Web.WebPages.Razor.resources.dll
-C:\Users\Vin\source\repos\QCMCreateur\QCMCreateur\obj\Debug\QCMCreateur.csprojAssemblyReference.cache
 C:\Users\Vin\source\repos\QCMCreateur\QCMCreateur\obj\Debug\QCMCreateur.csproj.CoreCompileInputs.cache
 C:\Users\Vin\source\repos\QCMCreateur\QCMCreateur\obj\Debug\QCMCreateur.csproj.CopyComplete
 C:\Users\Vin\source\repos\QCMCreateur\QCMCreateur\obj\Debug\QCMCreateur.dll
 C:\Users\Vin\source\repos\QCMCreateur\QCMCreateur\obj\Debug\QCMCreateur.pdb
+C:\Users\Vin\source\repos\QCMCreateur\QCMCreateur\obj\Debug\QCMCreateur.csprojAssemblyReference.cache

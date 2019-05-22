@@ -41,6 +41,7 @@ namespace QCMCreateur.Controllers
                     i++;
                     admin.UserName = admin.LastName.Substring(0, 3).ToLower() + i + admin.FirstName.Substring(0, 3).ToLower();
                 }
+                break;
             }
             qcmcreateur.EAdministrateur.Add(admin);
             qcmcreateur.SaveChanges();

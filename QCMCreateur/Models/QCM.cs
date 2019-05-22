@@ -8,22 +8,21 @@ namespace QCMCreateur.Models
 {
     public class QCM
     {
-
-        [Key]
-        [Required]
-        public string NameId { get; set; }
         [Required]
         public string Question { get; set; }
         [Required]
-        public string Reponse { get; set; }
+        public string ReponseUne { get; set; }
+        [Required]
+        public string ReponseDeux { get; set; }
+        [Required]
+        public string ReponseTrois { get; set; }
         [Required]
         public string BonneReponse { get; set; }
+        [Key]
         [Required]
-        public List<string> Difficulter = new List<string>()
-        { "6eme", "5eme", "4eme", "3eme", "seconde", "premiere", "Terminal" };
-        [Required]
-        public List<string> Matiere = new List<string>()
-        { "Français", "Mathematique", "Anglais", "Chimie", "Physique", "Biologie", "SVT", "Histoire", "Geographie" };
-        
+        public string Name { get; set; }
+
+        public List<string> ListeMatiere = new List<string>();
+        public string MatiereSelectionner { get; set; }
     }
 }

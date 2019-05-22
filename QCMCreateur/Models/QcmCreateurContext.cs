@@ -20,6 +20,7 @@
         public DbSet<Administrateur> EAdministrateur { get; set; }
         public DbSet<Enseignant> EEnseignant { get; set; }
         public DbSet<Etudiant> EEtudiant { get; set; }
+        public DbSet<Matiere> EMatiere { get; set; }
 
         // Ajoutez un DbSet pour chaque type d'entité à inclure dans votre modèle. Pour plus d'informations 
         // sur la configuration et l'utilisation du modèle Code First, consultez http://go.microsoft.com/fwlink/?LinkId=390109.
