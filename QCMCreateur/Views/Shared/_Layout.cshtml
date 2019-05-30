@@ -23,6 +23,8 @@
                 <ul class="nav navbar-nav">
                     @if (QCMCreateur.Models.Utilisateur.Connecter == false)
                     {
+                        <li>@Html.ActionLink("Matiere", "AfficherListeMatiere", "Matiere")</li>
+                        <li>@Html.ActionLink("Creer QCM", "CreerQCM", "QCM")</li>
                         <li>@Html.ActionLink("Se Connecter", "SeConnecter", "Utilisateur")</li>
                         <li>@Html.ActionLink("Inscription", "Inscription", "Etudiant")</li>
                     }

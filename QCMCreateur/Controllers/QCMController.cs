@@ -37,26 +37,24 @@ namespace QCMCreateur.Controllers
             int i = 1;
             qcm.Name = "QCM" + i;
 
+            var listematiere = qcmcreateur.EMatiere.ToList();
 
-            var query = qcmcreateur.EMatiere.ToList();
-
-            foreach (Matiere matiere in query)
+            foreach (Matiere matieres in listematiere)
             {
-                var listematiere = matiere.ListeQCM.ToList();
-
-                if (matiere.MatiereId == qcm.MatiereSelectionner)
+                if (matieres.MatiereId == qcm.MatiereSelectionner)
                 {
-                    foreach (QCM listeqcm in listematiere)
+                    var listeqcm = matieres.AfficherQcm();
+
+                    foreach (QCM qcms in listeqcm)
                     {
-                        while (qcm.Name == listeqcm.Name)
+                        while (qcm.Name == qcms.Name)
                         {
                             i++;
                             qcm.Name = "QCM" + i;
                         }
                         break;
                     }
-                    matiere.ListeQCM.Add(qcm);
-                    int verif = matiere.ListeQCM.Count();
+                    matieres.AjouterQcm(qcm);
                 }
             }
             qcmcreateur.SaveChanges();

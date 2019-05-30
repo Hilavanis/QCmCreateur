@@ -20,7 +20,7 @@ namespace QCMCreateur.Controllers
         public ActionResult AfficherListeQCM(string id)
         {
             Matiere matiere = qcmcreateur.EMatiere.Find(id);
-            var qcm = matiere.ListeQCM.ToList();
+            var qcm = matiere.AfficherQcm();
             return View(qcm);
         }
 
