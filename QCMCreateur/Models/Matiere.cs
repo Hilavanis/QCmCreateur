@@ -11,22 +11,5 @@ namespace QCMCreateur.Models
         [Key]
         [Required]
         public string MatiereId { get; set; }
-        public List<QCM> EQCM { get; set; }
-
-        public Matiere()
-        {
-            EQCM = new List<QCM>();
-        }
-
-        public List<QCM> AfficherQcm()
-        {
-            var qcm = EQCM.ToList();
-            return qcm;
-        }
-
-        public void AjouterQcm(QCM qcm)
-        {
-            EQCM.Add(qcm);
-        }
     }
 }

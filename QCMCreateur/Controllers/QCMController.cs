@@ -43,7 +43,9 @@ namespace QCMCreateur.Controllers
             {
                 if (matieres.MatiereId == qcm.MatiereSelectionner)
                 {
-                    var listeqcm = matieres.AfficherQcm();
+                    qcm.MatiereId = matieres.MatiereId;
+
+                    var listeqcm = qcmcreateur.EQCM.Where(c => c.MatiereId == matieres.MatiereId).ToList();
 
                     foreach (QCM qcms in listeqcm)
                     {
@@ -54,7 +56,7 @@ namespace QCMCreateur.Controllers
                         }
                         break;
                     }
-                    matieres.AjouterQcm(qcm);
+                    qcmcreateur.EQCM.Add(qcm);
                 }
             }
             qcmcreateur.SaveChanges();
