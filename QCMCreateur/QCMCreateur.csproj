@@ -129,8 +129,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="AuthorisationProvider.cs" />
-    <Compile Include="Controllers\MatiereController.cs" />
-    <Compile Include="Controllers\QCMController.cs" />
+    <Compile Include="Controllers\MatiereetQCMController.cs" />
     <Compile Include="Controllers\UtilisateurController.cs" />
     <Compile Include="Controllers\AdministrateurController.cs" />
     <Compile Include="Controllers\EnseignantController.cs" />
@@ -205,10 +204,10 @@
     <Content Include="Views\Enseignant\ModifierAuthorisation.cshtml" />
     <Content Include="Views\Enseignant\Details.cshtml" />
     <Content Include="Views\Etudiant\Details.cshtml" />
-    <Content Include="Views\QCM\CreerQCM.cshtml" />
-    <Content Include="Views\Matiere\AfficherListeMatiere.cshtml" />
-    <Content Include="Views\Matiere\AfficherListeQCM.cshtml" />
-    <Content Include="Views\Matiere\CreerMatiere.cshtml" />
+    <Content Include="Views\MatiereetQCM\AfficherListeMatiere.cshtml" />
+    <Content Include="Views\MatiereetQCM\AfficherListeQCM.cshtml" />
+    <Content Include="Views\MatiereetQCM\CreerQCM.cshtml" />
+    <Content Include="Views\MatiereetQCM\RepondreQCM.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

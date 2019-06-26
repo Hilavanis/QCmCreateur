@@ -1,0 +1,26 @@
+﻿@model IEnumerable<QCMCreateur.Models.Matiere>
+@{
+    ViewBag.Title = "ListeMatiere";
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MatiereId)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MatiereId)
+            </td>
+            <td>
+                @Html.ActionLink("Voir la liste", "AfficherListeQCM", new { id = item.MatiereId }) |
+                @Html.ActionLink("QCM Aléatoire", "RepondreQCM", new { id = item.MatiereId })
+            </td>
+        </tr>
+    }
+
+</table>

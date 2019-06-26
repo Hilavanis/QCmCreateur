@@ -23,8 +23,8 @@
                 <ul class="nav navbar-nav">
                     @if (QCMCreateur.Models.Utilisateur.Connecter == false)
                     {
-                        <li>@Html.ActionLink("Matiere", "AfficherListeMatiere", "Matiere")</li>
-                        <li>@Html.ActionLink("Creer QCM", "CreerQCM", "QCM")</li>
+                        <li>@Html.ActionLink("Matiere", "AfficherListeMatiere", "MatiereetQCM")</li>
+                        <li>@Html.ActionLink("Creer QCM", "CreerQCM", "MatiereetQCM")</li>
                         <li>@Html.ActionLink("Se Connecter", "SeConnecter", "Utilisateur")</li>
                         <li>@Html.ActionLink("Inscription", "Inscription", "Etudiant")</li>
                     }
@@ -32,13 +32,13 @@
                     {
                         if (QCMCreateur.Models.Administrateur.AdminOk == true)
                         {
-                            <li>@Html.ActionLink("Matiere", "AfficherListeMatiere", "Matiere")</li>
-                            <li>@Html.ActionLink("Creer QCM", "CreerQCM", "QCM")</li>
+                            <li>@Html.ActionLink("Matiere", "AfficherListeMatiere", "MatiereetQCM")</li>
+                            <li>@Html.ActionLink("Creer QCM", "CreerQCM", "MatiereetQCM")</li>
                             <li>@Html.ActionLink("Administrateur", "AfficherListeAdmin", "Administrateur")</li>
                         }
                         else if (QCMCreateur.Models.Enseignant.EnseigOk == true)
                         {
-                            <li>@Html.ActionLink("Creer QCM", "CreerQCM", "QCM")</li>
+                            <li>@Html.ActionLink("Creer QCM", "CreerQCM", "MatiereetQCM")</li>
                         }
                         <li>@Html.ActionLink("Enseignant", "AfficherListeEnseignant", "Enseignant")</li>
                         <li>@Html.ActionLink("Etudiant", "AfficherListeEtudiant", "Etudiant")</li>

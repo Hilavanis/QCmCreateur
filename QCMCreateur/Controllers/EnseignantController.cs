@@ -40,7 +40,7 @@ namespace QCMCreateur.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult ModifierAuthorisation([Bind(Include = "Authorisation, UserName, LastName, FirstName, Password, ComfirmedPassword Email ")]Enseignant enseignant)
+        public ActionResult ModifierAuthorisation([Bind(Include = "Authorisation, UserName, LastName, FirstName, Password, ComfirmedPassword, Email ")]Enseignant enseignant)
         {
             var query = from data in qcmcreateur.EUtilisateurs
                         where data.UserName == enseignant.UserName
